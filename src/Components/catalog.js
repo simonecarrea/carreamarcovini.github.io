@@ -13,7 +13,7 @@ const CatalogPage = () => {
   const navigate = useNavigate();
   const [selectedWine, setSelectedWine] = useState(null);
   const [selectedWineList, setSelectedWineList] = useState(null);
-  console.log("vini", wines);
+  console.log("vini", wines); 
 
   useEffect(() => {
     /* filteredVini = listaVini; */
