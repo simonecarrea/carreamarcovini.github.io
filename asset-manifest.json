@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/carreamarcovini.github.io/static/css/main.128ce13b.css",
-    "main.js": "/carreamarcovini.github.io/static/js/main.357b855a.js",
+    "main.css": "/carreamarcovini.github.io/static/css/main.3cbb4d0c.css",
+    "main.js": "/carreamarcovini.github.io/static/js/main.889834dc.js",
     "static/media/logoVini.png": "/carreamarcovini.github.io/static/media/logoVini.a39bc489fd90dfbd2dde.png",
     "static/media/impronta.jpeg": "/carreamarcovini.github.io/static/media/impronta.ab87f510ef377690a2d1.jpeg",
     "static/media/gavi2.jpeg": "/carreamarcovini.github.io/static/media/gavi2.4dcd64e2b1c69c7fdeb7.jpeg",
@@ -35,11 +35,11 @@
     "static/media/slick.ttf": "/carreamarcovini.github.io/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/carreamarcovini.github.io/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/carreamarcovini.github.io/index.html",
-    "main.128ce13b.css.map": "/carreamarcovini.github.io/static/css/main.128ce13b.css.map",
-    "main.357b855a.js.map": "/carreamarcovini.github.io/static/js/main.357b855a.js.map"
+    "main.3cbb4d0c.css.map": "/carreamarcovini.github.io/static/css/main.3cbb4d0c.css.map",
+    "main.889834dc.js.map": "/carreamarcovini.github.io/static/js/main.889834dc.js.map"
   },
   "entrypoints": [
-    "static/css/main.128ce13b.css",
-    "static/js/main.357b855a.js"
+    "static/css/main.3cbb4d0c.css",
+    "static/js/main.889834dc.js"
   ]
 }
