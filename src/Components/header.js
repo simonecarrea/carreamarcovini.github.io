@@ -20,12 +20,12 @@ const Header = () => {
       </div>
       {!isLoginPage &&
         <div className='navigation-tab'>
-          <a className='a' href="/">Home</a>
+          <a className='a' href="/carreamarcovini.github.io/">Home</a>
         </div>
       }
       {!isLoginPage &&
         <div className='navigation-tab'>
-          <a className='a' href="/catalog">Catalogo Vini</a>
+          <a className='a' href="/carreamarcovini.github.io/catalog">Catalogo Vini</a>
         </div>
       }
       {!isLoginPage &&
