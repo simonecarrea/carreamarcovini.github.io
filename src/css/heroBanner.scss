@@ -1,0 +1,76 @@
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+.slick-slide .slick-active .slick-current {
+  background-color: goldenrod;
+}
+
+.slick-slide img {
+  display: inline;
+  width: 80%;
+  /* Sovrascrivi il display block */
+}
+
+/* Nascondi le frecce di default */
+.slick-slide .slick-prev,
+.slick-slide .slick-next {
+  display: none!important;
+}
+
+/* Animazione per far apparire le frecce */
+.slick-slider:hover .slick-prev {
+  opacity: 1; /* Rendi visibile l'icona "successiva" */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Aggiungi una transizione */
+  left: 10px;
+  display: block!important;
+  padding-bottom: 0px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  width: 5%;
+  height: 105%;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.slick-slider:hover .slick-next {
+  opacity: 1; /* Rendi visibile l'icona "successiva" */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Aggiungi una transizione */
+  right: 10px;
+  display: block!important;
+  padding-bottom: 0px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  width: 5%;
+  height: 105%;
+  border-radius: 10px;
+  //transform: translateX(calc(-100% + 70px));
+ // margin-top: -97px;
+  
+}
+
+/* .slick-next {
+  opacity: 1; 
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  right: 10px;
+  display: block!important;
+  padding-bottom: 0px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  width: 5%;
+  height: 100%;
+  border-radius: 10px;
+  transform: translateX(calc(-100% + 70px));
+  margin-top: -97px;
+} */
+
+.hero-img {
+  width: 80%;
+}

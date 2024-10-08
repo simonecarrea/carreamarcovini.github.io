@@ -1,0 +1,231 @@
+/* .header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: transparent;
+  position: relative;
+  top: 0;
+  height: auto;
+  min-height: 70px;
+  z-index: 1;
+  color: #e5e5e5;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  width: 25%;
+}
+
+.logoEon {
+  width: 25%;
+}
+
+
+.nav {
+  margin-left: 20px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  display: inline;
+  margin-left: 20px;
+  align-items: center;
+  color: #e5e5e5;
+  display: flex;
+  height: 100%;
+  position: relative;
+  transition: color .4s;
+}
+
+.nav-list li:first-child {
+  margin-left: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-list a:hover {
+  color: #007BFF;
+}
+
+.navigation-tab {
+  align-items: center;
+  color: #e5e5e5;
+  display: flex;
+  height: 100%;
+  position: relative;
+  padding-left: 20px;
+  width: 20%;
+
+}
+
+.a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  transition: color .4s;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  font-size: 24px;
+}
+
+.a:hover {
+  color: #4b4c4d;
+}
+
+.profile {
+  margin-left: 60%;
+}
+
+.icona {
+  margin: 0 10px;
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+ */
+
+ .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: transparent;
+  position: relative;
+  top: 0;
+  height: auto;
+  min-height: 70px;
+  z-index: 1;
+  color: #e5e5e5;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  width: 25%;
+}
+
+.logoEon {
+  width: 90px; /* Ridimensiona il logo */
+}
+
+.nav {
+  margin-left: 20px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-list li {
+  margin-left: 20px;
+  align-items: center;
+  color: #e5e5e5;
+  display: flex;
+  height: 100%;
+  position: relative;
+  transition: color 0.4s;
+}
+
+.nav-list li:first-child {
+  margin-left: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #e5e5e5;
+  font-size: 18px;
+}
+
+.nav-list a:hover {
+  color: #007BFF;
+}
+
+.navigation-tab {
+  align-items: center;
+  color: #e5e5e5;
+  display: flex;
+  height: 100%;
+  position: relative;
+  padding-left: 20px;
+  width: 20%;
+}
+
+.a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  transition: color 0.4s;
+  background-color: transparent;
+  font-size: 18px;
+}
+
+.a:hover {
+  color: #4b4c4d;
+}
+
+.profile {
+  margin-left: 60%;
+}
+
+.icona {
+  margin: 0 10px;
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+/* --- Media query per dispositivi mobili --- */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .logoEon {
+    width: 120px; /* Ridimensiona ulteriormente il logo per mobile */
+  }
+
+  .nav-list {
+    flex-direction: column; /* Disposizione verticale del menu */
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .nav-list li {
+    margin: 10px 0; /* Maggior spaziatura tra i link */
+  }
+
+  .nav-list a {
+    font-size: 16px; /* Riduci la dimensione del font sui dispositivi mobili */
+    color: #e5e5e5;
+  }
+
+  .profile {
+    margin-left: 0;
+    align-self: flex-end; /* Sposta l'icona del profilo in fondo */
+  }
+
+  .navigation-tab {
+    width: 100%; /* Ogni voce di navigazione occupa l'intera larghezza su mobile */
+    padding-left: 0;
+    text-align: center; /* Centra i link */
+  }
+
+  .a {
+    font-size: 16px; /* Ridimensiona i link per mobile */
+  }
+}

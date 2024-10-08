@@ -1,0 +1,22 @@
+
+.product-list {
+    width: 30%;
+}
+/* Stile per i bottoni */
+.product-list button {
+    display: block;
+    width: 70%;
+    padding: 10px;
+    border: none;
+    background-color: #b92929;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  .product-list button:hover {
+    background-color: #b92929;
+  }
+  
