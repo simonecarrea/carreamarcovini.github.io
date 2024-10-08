@@ -2,7 +2,7 @@
   "name": "portale-vini",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://simonecarrea.github.io/carreamarcovini.github.io/homepage",
+  "homepage": "https://simonecarrea.github.io/carreamarcovini.github.io",
   "dependencies": {
     "@react-google-maps/api": "^2.19.2",
     "babel-preset-react": "^6.24.1",

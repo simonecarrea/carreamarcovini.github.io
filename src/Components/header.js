@@ -25,17 +25,17 @@ const Header = () => {
       }
       {!isLoginPage &&
         <div className='navigation-tab'>
-          <a className='a' href="/carreamarcovini.github.io/catalog">Catalogo Vini</a>
+          <a className='a' href="/carreamarcovini.github.io/#/catalog">Catalogo Vini</a>
         </div>
       }
       {!isLoginPage &&
         <div className='navigation-tab'>
-          <a className='a' href="/carreamarcovini.github.io/product">La nostra cantina</a>
+          <a className='a' href="/carreamarcovini.github.io/#/product">La nostra cantina</a>
         </div>
       }
       {!isLoginPage &&
         <div className='navigation-tab'>
-          <a className='a' href="/carreamarcovini.github.io/contatti">Contatti</a>
+          <a className='a' href="/carreamarcovini.github.io/#/contatti">Contatti</a>
         </div>
       }
       {/* {!isLoginPage &&
