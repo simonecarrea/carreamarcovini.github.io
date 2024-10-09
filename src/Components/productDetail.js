@@ -11,7 +11,7 @@ import { HiOutlinePuzzlePiece } from "react-icons/hi2";
 import { IoCalendarOutline } from "react-icons/io5";
 
 const ProductDetail = ({ product }) => {
-  console.log("prodotto", product);
+  console.log("dettaglio prodotto", product);
   if (!product) {
     return <div className="product-detail">Seleziona un prodotto per visualizzarne i dettagli.</div>;
   }
@@ -20,11 +20,11 @@ const ProductDetail = ({ product }) => {
     <div className="product-detail">
       <h2>{product.name}</h2>
       <div className='product-container'>
-        <div className="wine-card">
+        <div className="wine-card-detail">
           <img src={product.imgUrl} alt='productImage' className='product-image' />
         </div>
         {/*  <p>{product.description}</p> */}
-        <div className="wine-content">
+        <div className="wine-content-detail">
           <p><b>Lista Ingredienti: </b></p>
           <table>
             <tr>

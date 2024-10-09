@@ -31,30 +31,6 @@ const products = [
   },
 ];
 
-/* const ProductList = ({ onProductSelect }) => {
-  console.log('LISTA VINI',listaVini);
-  return (
-    <div className="product-list">
-      <ul>
-        {products.map((product) => (
-          <li key={product.id}>
-            <button 
-              className="product-button"
-              onClick={() => onProductSelect(product)}
-            >
-              {product.name}
-            </button>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-};
-
-
-
-export default ProductList; */
-
 const ProductList = ({ onProductSelect }) => {
   // Impostazioni per il carosello
   const settings = {
@@ -69,6 +45,7 @@ const ProductList = ({ onProductSelect }) => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false 
         },
       },
     ],

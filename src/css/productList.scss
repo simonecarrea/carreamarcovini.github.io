@@ -27,6 +27,11 @@
 
 /* --- Media Queries per Ottimizzazione Mobile --- */
 @media (max-width: 768px) {
+  button.slick-slider.slick-prev
+  button.slick-slider.slick-next{
+    display: none; /* Nascondi le frecce del carosello sui dispositivi mobili */
+  }
+
   .product-button {
     font-size: 16px; /* Riduci la dimensione del font sui dispositivi mobili */
   }

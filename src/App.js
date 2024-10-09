@@ -25,12 +25,13 @@ class App extends Component {
             {/* <Route path="/" exact element={<HomeParallax />} />  Home page in stile parallax*/}
             <Route path="/" exact element={<Home />} />
             <Route path='/carreamarcovini.github.io/login' exact element={<Login />} />
-            <Route path='/carreamarcovini.github.io/vini/:courseId' exact element={<CourseDetailPage />} />
+            <Route path='/vini/:courseId' exact element={<CourseDetailPage />} />
             <Route path='/carreamarcovini.github.io/catalog/:category' exact element={<CategoryPage />} />
             <Route path='/catalog' exact element={<CatalogPage />} />
             <Route path='/carreamarcovini.github.io/my_courses' exact element={<MyCourses />} />
             <Route path='/contatti' exact element={<ContactPage />} />
             <Route path='/product' exact element={<ProductPage />} />
+            <Route path='/prodotto/:idVino' exact element={<ProductPage />} />
           </Routes>
         </Router>
         <Footer />

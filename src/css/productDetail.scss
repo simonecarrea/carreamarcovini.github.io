@@ -12,31 +12,33 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  align-content: center;
 }
 
 
-.wine-card {
+.wine-card-detail {
   flex: 1;
   padding: 25px 50px 75px;
 }
 
-.wine-card img {
+.wine-card-detail img {
   width: 75%;
   border-radius: 10px;
 }
 
-.wine-content {
+.wine-content-detail {
   flex: 1;
-  padding: 25px 50px 75px;
+  padding: 25px 0px 75px;
   text-align: left;
+  max-width: 85%;
 }
 
-.wine-content h2 {
+.wine-content-detail h2 {
   font-size: 24px;
   padding-bottom: 40px;
 }
 
-.wine-content p {
+.wine-content-detail p {
   font-size: 16px;
   margin-left: 1em;
 }
@@ -53,9 +55,9 @@
     flex-wrap: wrap;
     gap: 20px;
 
-    .wine-card,
+    .wine-card-detail,
     .wine-content {
-      flex: 1 1 45%; // Imposta il layout per schermi più grandi
+      //flex: 1 1 45%; // Imposta il layout per schermi più grandi
 
       img.product-image {
         width: 100%; // Assicura che l'immagine si adatti
@@ -83,7 +85,7 @@
       font-size: 1.25rem; // Riduce leggermente la dimensione del titolo
     }
 
-    .wine-card,
+    .wine-card-detail,
     .wine-content {
       flex: 1 1 100%; // Ogni sezione occuperà il 100% della larghezza su mobile
     }
@@ -91,6 +93,7 @@
     table {
       td {
         font-size: 0.9rem; // Riduce la dimensione del testo nelle tabelle su dispositivi mobili
+        padding: 15px 0px 15px;
       }
     }
 
