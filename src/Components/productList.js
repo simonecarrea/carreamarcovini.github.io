@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../css/productList.scss';
 import borraccia from '../assets/loghi/borraccia.webp';
 import barbera from '../assets/loghi/VITIDAUTUNNO-PIEMONTE-BARBERA.jpg';
 import listaVini from '../mock/listaVini.js';
 import Slider from 'react-slick';
+import { useNavigate, useParams , useLocation} from 'react-router-dom';
 
 const products = [
-  { id: 1, 
-    name: 'Moscato', 
-    acidità: 'Contiene E296 e/o E330 e/o E334', 
+
+  {
+    id: 1,
+    name: 'Moscato',
+    acidità: 'Contiene E296 e/o E330 e/o E334',
     conservante: 'Contiene E242',
     imbottigliamento: 'Imbottigliato in atmosfera protettiva',
     solfiti: 'contiene SOLFITI(E220)',
@@ -19,19 +22,27 @@ const products = [
     zuccheri: '10 g',
     proteine: '0 g',
     sale: '0,01 g',
-    imgUrl: barbera 
+    imgUrl: barbera
   },
-  { id: 2, 
-    name: 'Product 2', 
-    description: 'Description for Product 2' 
+  {
+    id: 2,
+    name: 'Product 2',
+    description: 'Description for Product 2'
   },
-  { id: 3, 
-    name: 'Product 3', 
-    description: 'Description for Product 3' 
+  {
+    id: 3,
+    name: 'Product 3',
+    description: 'Description for Product 3'
   },
 ];
 
 const ProductList = ({ onProductSelect }) => {
+
+  const navigate = useNavigate();
+  const { name } = useParams();
+  const location = useLocation(); 
+  const queryParams = new URLSearchParams(location.search);
+  const idVino = queryParams.get('name'); // Ottieni il query param idVino
   // Impostazioni per il carosello
   const settings = {
     dots: true,
@@ -45,11 +56,19 @@ const ProductList = ({ onProductSelect }) => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows: false 
+          arrows: false
         },
       },
     ],
   };
+
+  useEffect(() => {
+    console.log("PARAM", idVino);
+    const product = products.find((p) => p.name === idVino);
+    if (product) {
+      onProductSelect(product);
+    }
+  }, [name]);
 
   return (
     <div className="product-list">
@@ -58,7 +77,7 @@ const ProductList = ({ onProductSelect }) => {
         <Slider {...settings}>
           {products.map((product) => (
             <div key={product.id} className="product-item">
-              <button 
+              <button
                 className="product-button"
                 onClick={() => onProductSelect(product)}
               >
@@ -72,7 +91,7 @@ const ProductList = ({ onProductSelect }) => {
         <ul className="desktop-product-list">
           {products.map((product) => (
             <li key={product.id} className="product-item">
-              <button 
+              <button
                 className="product-button"
                 onClick={() => onProductSelect(product)}
               >

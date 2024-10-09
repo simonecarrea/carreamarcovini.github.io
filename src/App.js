@@ -31,7 +31,7 @@ class App extends Component {
             <Route path='/carreamarcovini.github.io/my_courses' exact element={<MyCourses />} />
             <Route path='/contatti' exact element={<ContactPage />} />
             <Route path='/product' exact element={<ProductPage />} />
-            <Route path='/prodotto/:idVino' exact element={<ProductPage />} />
+            <Route path='/prodotto' exact element={<ProductPage />} />
           </Routes>
         </Router>
         <Footer />
