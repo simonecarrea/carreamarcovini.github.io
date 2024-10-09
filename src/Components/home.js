@@ -41,7 +41,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
-{/* <h2 className='title'>Corsi Disponibili</h2>
-      <CourseList /> */}
