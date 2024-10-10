@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/carreamarcovini.github.io/static/css/main.4cddd1f9.css",
-    "main.js": "/carreamarcovini.github.io/static/js/main.1ad0698c.js",
+    "main.js": "/carreamarcovini.github.io/static/js/main.9d928d35.js",
     "static/media/logoVini.png": "/carreamarcovini.github.io/static/media/logoVini.a39bc489fd90dfbd2dde.png",
     "static/media/impronta.jpeg": "/carreamarcovini.github.io/static/media/impronta.ab87f510ef377690a2d1.jpeg",
     "static/media/gavi2.jpeg": "/carreamarcovini.github.io/static/media/gavi2.4dcd64e2b1c69c7fdeb7.jpeg",
@@ -20,7 +20,6 @@
     "static/media/barberaAlbaLodali.jpeg": "/carreamarcovini.github.io/static/media/barberaAlbaLodali.198ec591efd745c87045.jpeg",
     "static/media/macchina-eon.png": "/carreamarcovini.github.io/static/media/macchina-eon.5b9956f9c15d7f3dab17.png",
     "static/media/rosatoToscano.jpeg": "/carreamarcovini.github.io/static/media/rosatoToscano.82dd77632a8ac046a514.jpeg",
-    "static/media/borraccia.webp": "/carreamarcovini.github.io/static/media/borraccia.4203751133d4fd329b67.webp",
     "static/media/grignolinoGatto.jpeg": "/carreamarcovini.github.io/static/media/grignolinoGatto.5cd8c48b4d23b2c189cf.jpeg",
     "static/media/CigliegioloRiserva.webp": "/carreamarcovini.github.io/static/media/CigliegioloRiserva.bc3b9aaa1c00bac955b0.webp",
     "static/media/lagrenLavis.webp": "/carreamarcovini.github.io/static/media/lagrenLavis.653a59090f0cc4121ef2.webp",
@@ -36,10 +35,10 @@
     "static/media/slick.woff": "/carreamarcovini.github.io/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/carreamarcovini.github.io/index.html",
     "main.4cddd1f9.css.map": "/carreamarcovini.github.io/static/css/main.4cddd1f9.css.map",
-    "main.1ad0698c.js.map": "/carreamarcovini.github.io/static/js/main.1ad0698c.js.map"
+    "main.9d928d35.js.map": "/carreamarcovini.github.io/static/js/main.9d928d35.js.map"
   },
   "entrypoints": [
     "static/css/main.4cddd1f9.css",
-    "static/js/main.1ad0698c.js"
+    "static/js/main.9d928d35.js"
   ]
 }
