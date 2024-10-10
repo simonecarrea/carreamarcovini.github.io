@@ -1,14 +1,6 @@
 import React from 'react';
 import '../css/productDetail.scss';
-import { CiCalendar } from "react-icons/ci";
-import { HiOutlineIdentification } from "react-icons/hi2";
-import { GiVineLeaf } from "react-icons/gi";
-import { PiBeerBottle } from "react-icons/pi";
-import { LiaWineBottleSolid } from "react-icons/lia";
-import { LiaTemperatureHighSolid } from "react-icons/lia";
-import { LuClipboardType } from "react-icons/lu";
-import { HiOutlinePuzzlePiece } from "react-icons/hi2";
-import { IoCalendarOutline } from "react-icons/io5";
+
 
 const ProductDetail = ({ product }) => {
   console.log("dettaglio prodotto", product);
@@ -21,7 +13,7 @@ const ProductDetail = ({ product }) => {
       <h2>{product.name}</h2>
       <div className='product-container'>
         <div className="wine-card-detail">
-          <img src={product.imgUrl} alt='productImage' className='product-image' />
+          <img src={product.immagineVino.fields.file.url} alt='productImage' className='product-image' />
         </div>
         {/*  <p>{product.description}</p> */}
         <div className="wine-content-detail">
@@ -33,7 +25,7 @@ const ProductDetail = ({ product }) => {
             </tr>
             <tr>
               <td>Regolatori dell'acidità:</td>
-              <td><b>{product.acidità}</b></td>
+              <td><b>{product.regolatoriAcidit}</b></td>
             </tr>
             <tr>
               <td>Conservante:</td>

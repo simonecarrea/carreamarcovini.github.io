@@ -6,6 +6,8 @@ import HeroBanner from './heroBanner';
 import '../css/home.scss';
 import gavi from '../assets/loghi/gavi.jpeg';
 import firma from '../assets/loghi/firma.svg';
+import { retrieveWineList } from '../services/wineService'; 
+
 
 const Home = () => {
 
@@ -24,6 +26,18 @@ const Home = () => {
     // Quando il componente viene creato, dispaccia l'azione per ottenere i corsi
     dispatch(getCourses());
   }, [dispatch]);
+
+
+
+  useEffect(() => {
+    // Richiama retrieveWineList e stampa i risultati
+    const fetchWines = async () => {
+      const wineList = await retrieveWineList();
+      console.log('Wine List:', wineList); // Visualizza i dati nel console log
+    };
+
+    fetchWines();
+  }, []);
 
   return (
     <div>

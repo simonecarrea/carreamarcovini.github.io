@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+/* import React, { useState, useEffect } from 'react';
 import '../css/productList.scss';
 import borraccia from '../assets/loghi/borraccia.webp';
 import barbera from '../assets/loghi/VITIDAUTUNNO-PIEMONTE-BARBERA.jpg';
 import listaVini from '../mock/listaVini.js';
 import Slider from 'react-slick';
 import { useNavigate, useParams , useLocation} from 'react-router-dom';
+import { retrieveWineListCarreaMarco } from '../services/wineService'; // Assicurati di avere questo import
 
 const products = [
 
@@ -43,6 +44,7 @@ const ProductList = ({ onProductSelect }) => {
   const location = useLocation(); 
   const queryParams = new URLSearchParams(location.search);
   const idVino = queryParams.get('name'); // Ottieni il query param idVino
+  let wineList = [];
   // Impostazioni per il carosello
   const settings = {
     dots: true,
@@ -70,9 +72,18 @@ const ProductList = ({ onProductSelect }) => {
     }
   }, [name]);
 
+  useEffect(() => {
+    // Richiama retrieveWineListCarreaMarco e stampa i risultati
+    const fetchWines = async () => {
+      wineList = await retrieveWineListCarreaMarco();
+      console.log('Wine List:', wineList); // Visualizza i dati nel console log
+    };
+
+    fetchWines();
+  }, []);
+
   return (
     <div className="product-list">
-      {/* Verifica la larghezza della finestra per decidere come rendere i prodotti */}
       {window.innerWidth < 768 ? (
         <Slider {...settings}>
           {products.map((product) => (
@@ -96,6 +107,98 @@ const ProductList = ({ onProductSelect }) => {
                 onClick={() => onProductSelect(product)}
               >
                 <span>{product.name}</span>
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+};
+
+export default ProductList; */
+
+
+import React, { useState, useEffect } from 'react';
+import '../css/productList.scss';
+import Slider from 'react-slick';
+import { useNavigate, useParams, useLocation } from 'react-router-dom';
+import { retrieveWineListCarreaMarco } from '../services/wineService'; // Assicurati di avere questo import
+
+const ProductList = ({ onProductSelect }) => {
+  const navigate = useNavigate();
+  const { name } = useParams();
+  const location = useLocation(); 
+  const queryParams = new URLSearchParams(location.search);
+  const idVino = queryParams.get('name'); // Ottieni il query param idVino
+  const [wineList, setWineList] = useState([]); // Stato per la lista dei vini
+
+  // Impostazioni per il carosello
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1, // Mostra un prodotto alla volta
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768, // Per schermi più piccoli
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+        },
+      },
+    ],
+  };
+
+  useEffect(() => {
+    console.log("PARAM", idVino);
+    const product = wineList.find((p) => p.nomeVino === idVino);
+    if (product) {
+      onProductSelect(product);
+    }
+  }, [idVino, wineList]); // Aggiungi wineList come dipendenza
+
+  useEffect(() => {
+    // Richiama retrieveWineListCarreaMarco e imposta i risultati nello stato
+    const fetchWines = async () => {
+      try {
+        const wines = await retrieveWineListCarreaMarco();
+        setWineList(wines); // Imposta la lista dei vini nello stato
+        console.log('Wine List:', wines); // Visualizza i dati nel console log
+      } catch (error) {
+        console.error('Errore nel recupero dei vini:', error);
+      }
+    };
+
+    fetchWines();
+  }, []);
+
+  return (
+    <div className="product-list">
+      {window.innerWidth < 768 ? (
+        <Slider {...settings}>
+          {wineList.map((product) => (
+            <div key={product.id} className="product-item">
+              <button
+                className="product-button"
+                onClick={() => onProductSelect(product)}
+              >
+                <span>{product.nomeVino}</span>
+              </button>
+            </div>
+          ))}
+        </Slider>
+      ) : (
+        <ul className="desktop-product-list">
+          {wineList.map((product) => (
+            <li key={product.id} className="product-item">
+              <button
+                className="product-button"
+                onClick={() => onProductSelect(product)}
+              >
+                <span>{product.nomeVino}</span>
               </button>
             </li>
           ))}

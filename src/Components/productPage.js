@@ -13,8 +13,7 @@ const ProductPage = () => {
   const handleProductSelect = (product) => {
     setSelectedProduct(product);
     console.log("Navigate product", product);
-    //navigate(`/prodotto/${product.name}`, { state: { product } });
-    navigate(`/prodotto?name=${product.name}`, { state: { product } });
+    navigate(`/prodotto?name=${product.nomeVino}`, { state: { product } });
   };
 
   return (
