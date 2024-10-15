@@ -1,7 +1,8 @@
 .card {
     padding: 16px;
     margin: 16px;
-    width: 230px;
+    //width: 230px;
+    width: 207px;
     border: 1px solid gray;
     border-radius: 10px;
 
@@ -47,3 +48,13 @@
 .card-grid .card:last-child {
     margin-right: 0;
 } */
+
+@media (max-width: 768px) {
+    .card {
+        padding: 16px;
+        margin: 16px;
+        width: 230px;
+        border: 1px solid gray;
+        border-radius: 10px;
+    }
+}
