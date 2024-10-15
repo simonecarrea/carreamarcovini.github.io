@@ -1,5 +1,4 @@
 // ModaleFiltri.js
-
 import React, { useState } from 'react';
 import '../css/filterModal.scss';
 function ModaleFiltri({ mostraModale, chiudiModale, applicaFiltri }) {
@@ -17,23 +16,15 @@ function ModaleFiltri({ mostraModale, chiudiModale, applicaFiltri }) {
     return (
         <div className={`modale ${mostraModale ? 'aperta' : ''}`}>
             <div className="contenuto-modale">
-                {/* <h2>Modale Filtri</h2>
-        <label>
-          Filtro 1:
-          <input type="text" value={filtro1} onChange={(e) => setFiltro1(e.target.value)} />
-        </label>
-        <label>
-          Filtro 2:
-          <input type="text" value={filtro2} onChange={(e) => setFiltro2(e.target.value)} />
-        </label> */}
                 <div className="filter-panel">
                     <h2>Filtri</h2>
                     <div className="filter-section">
                         <label htmlFor="category">Tipologia:</label>
                         <select id="category" value={filtroTipologia} onChange={(e) => setFiltroTipologia(e.target.value)}>
                             <option value="">Tutte</option>
-                            <option value="rosso">Vino Rosso</option>
-                            <option value="bianco">Vino Bianco</option>
+                            <option value="Rosso">Rosso</option>
+                            <option value="Bianco">Bianco</option>
+                            <option value="Spumante">Spumante</option>
                             {/* Altre opzioni di categoria */}
                         </select>
                     </div>
