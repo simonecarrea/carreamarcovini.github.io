@@ -85,17 +85,17 @@ const CourseDetailPage = () => {
 		<>
 			<div className="wine-detail">
 				<div className="wine-card">
-					<img src={vino.imageUrl} alt="Immagine del corso" className='immagineDettaglio'/>
+					<img src={vino.immagineVino?.fields.file.url} alt="Immagine del corso" className='immagineDettaglio'/>
 				</div>
 				<div className="wine-content">
 					<h2>{vino.title}</h2>
 					<span className='campoDescrizione'><CiCalendar className='iconaCampoDescrizione'/> <p>Annata: <b>{vino.annata}</b></p></span>
-					<span className='campoDescrizione'><HiOutlineIdentification className='iconaCampoDescrizione'/> <p>Denominazione: <b>{vino.classificazione}</b></p></span>
+					<span className='campoDescrizione'><HiOutlineIdentification className='iconaCampoDescrizione'/> <p>Denominazione: <b>{vino.denominazione}</b></p></span>
 					<span className='campoDescrizione'><GiVineLeaf className='iconaCampoDescrizione'/> <p>Vitigno: <b>{vino.vitigno}</b></p></span>
 					<span className='campoDescrizione'><LiaWineBottleSolid className='iconaCampoDescrizione'/> <p>Formato: <b>{vino.formato}</b></p></span>
 					<span className='campoDescrizione'><PiBeerBottle className='iconaCampoDescrizione'/> <p>Alcol: <b>{vino.alcol}</b></p></span>
 					<span className='campoDescrizione'><IoCalendarOutline className='iconaCampoDescrizione'/> <p>Consumo ideale: <b>{vino.consumo}</b></p></span>
-					<span className='campoDescrizione'><LiaTemperatureHighSolid className='iconaCampoDescrizione'/> <p>Temperatura di servizio: <b>{vino.temperatura}</b></p></span>
+					<span className='campoDescrizione'><LiaTemperatureHighSolid className='iconaCampoDescrizione'/> <p>Temperatura di servizio: <b>{vino.temperaturaDiServizio}</b></p></span>
 					<span className='campoDescrizione'><LuClipboardType className='iconaCampoDescrizione'/> <p>Tipologia: <b>{vino.tipologia}</b></p></span>
 					<span className='campoDescrizione'><HiOutlinePuzzlePiece className='iconaCampoDescrizione'/> <p>Abbinamenti: <b>{vino.abbinamenti}</b></p></span>
 				</div>

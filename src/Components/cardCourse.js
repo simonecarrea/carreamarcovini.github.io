@@ -20,10 +20,10 @@ const CardCourse = ({ vino, onWineClick }) => {
   return (
     <div className="card" onClick={handleClick}>
       <div className="card-image">
-        <img src={vino.imageUrl} alt={vino.title} />
+        <img src={vino.immagineVino?.fields.file.url} alt={vino.title} />
       </div>
       <div className="card-content">
-        <h2>{vino.title}</h2>
+        <h2>{vino.nomeVino}</h2>
         <h3>{vino.produttore}</h3>
       </div>
     </div>

@@ -347,7 +347,7 @@ export const listaVini = [
     abbinamenti: 'Food pairings for the new wine'
   }, */
 
-  {
+ /*  {
     id: 17,
     title: 'Langhe DOC Dolcetto Trifulot',
     subtitle: 'Langhe DOC Dolcetto Trifulot',
@@ -387,7 +387,7 @@ export const listaVini = [
     consumo: '',
     temperatura: '16-18°C',
     abbinamenti: 'Ideale con piatti di carne, formaggi stagionati e salumi tipici piemontesi.'
-  },
+  }, */
 
   
  

@@ -6,6 +6,7 @@ import '../css/catalog.scss';
 import listaVini from '../mock/listaVini.js';
 import { BsFilterCircle } from "react-icons/bs";
 import { useNavigate } from 'react-router-dom';
+import { retrieveWineList } from '../services/wineService'; 
 
 const CatalogPage = () => {
   const [wines, setWines] = useState(listaVini); // Stato per i vini
@@ -29,6 +30,17 @@ const CatalogPage = () => {
   const chiudiModale = () => {
     setMostraModale(false);
   };
+
+  useEffect(() => {
+    // Richiama retrieveWineList e stampa i risultati
+    const fetchWines = async () => {
+      const wineList = await retrieveWineList();
+      setWines(wineList);
+      console.log('Wine List:', wineList); // Visualizza i dati nel console log
+    };
+
+    fetchWines();
+  }, []);
 
   const applicaFiltri = (filtri) => {
     console.log('Filtri applicati:', filtri);
