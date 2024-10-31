@@ -26,7 +26,8 @@ const Header = () => {
         {!isLoginPage && (
           <>
             <Link className='a' to="/" onClick={toggleMenu}>Home</Link>
-            <Link className='a' to="/catalog" onClick={toggleMenu}>Catalogo Vini</Link>
+            <Link className='a' to="/catalogoVini" onClick={toggleMenu}>Catalogo Vini</Link>
+            <Link className='a' to="/catalogoBirre" onClick={toggleMenu}>Catalogo Birre</Link>
             <Link className='a' to="/product" onClick={toggleMenu}>La nostra cantina</Link>
             <Link className='a' to="/contatti" onClick={toggleMenu}>Contatti</Link>
           </>

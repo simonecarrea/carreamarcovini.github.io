@@ -8,7 +8,7 @@ const CardCourse = ({ vino, onWineClick }) => {
       // Chiamare la funzione onCourseClick e passare i dati del corso
       
       console.log("handleCourseClick", vino);
-      navigate(`/vini/${vino.title}`, { state: { vino } });
+      navigate(`/vino/${vino.nomeVino}`, { state: { vino } });
       onWineClick({
           id: vino.id,
           title: vino.title,

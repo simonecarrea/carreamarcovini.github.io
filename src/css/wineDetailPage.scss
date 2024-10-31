@@ -15,9 +15,11 @@
   width: 75%;
   border-radius: 10px;    
   background-color: white;
+  cursor: zoom-in;
 }
 
-.immagineDettaglio:hover {
+.immagineDettaglio.ingrandita {
+  cursor: zoom-out;
   transform: scale(1.8);
   position: relative;
   margin-left: 60%;

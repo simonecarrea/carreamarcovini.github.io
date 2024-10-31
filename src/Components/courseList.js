@@ -208,7 +208,7 @@ const CourseList = () => {
   const handleCourseListClick = (courses) => {
     setSelectedCourseList(courses);
     const category = courses[0].category;
-    navigate(`/catalog/${category}`, { state: { selectedCourseList: courses } });
+    navigate(`/catalogoVini/${category}`, { state: { selectedCourseList: courses } });
     console.log('Corso selezionato:', selectedCourseList, courses);
   };
   
