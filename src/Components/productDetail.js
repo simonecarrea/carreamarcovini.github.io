@@ -17,27 +17,25 @@ const ProductDetail = ({ product }) => {
         </div>
         {/*  <p>{product.description}</p> */}
         <div className="wine-content-detail">
+          <p><b>Formato Bottiglia: </b></p>
+          <table>
+            <tr>
+              <td><b>{product.formatoBottiglie}</b></td>
+            </tr>
+          </table>
           <p><b>Lista Ingredienti: </b></p>
           <table>
             <tr>
-              <td>Uva:</td>
-              <td><b>{product.energia}</b></td>
+              <td><b>Uva</b></td>
             </tr>
             <tr>
-              <td>Regolatori dell'acidità:</td>
-              <td><b>{product.regolatoriAcidit}</b></td>
-            </tr>
-            <tr>
-              <td>Conservante:</td>
               <td><b>{product.conservante}</b></td>
             </tr>
             <tr>
-              <td>Solfiti:</td>
               <td><b>{product.solfiti}</b></td>
             </tr>
             <tr>
-              <td>Imbottigliamento:</td>
-              <td><b>{product.imbottigliamento}</b></td>
+              <td><b>{product.solfiti2}</b></td>
             </tr>
           </table>
           <br></br>
@@ -54,7 +52,7 @@ const ProductDetail = ({ product }) => {
             </tr>
             <tr>
               <td>di cui Acidi e Saturi:</td>
-              <td><b>{product.acidi_saturi}</b></td>
+              <td><b>{product.diCuiAcidiESaturi}</b></td>
             </tr>
             <tr>
               <td>Carboidrati:</td>
@@ -62,7 +60,7 @@ const ProductDetail = ({ product }) => {
             </tr>
             <tr>
               <td>di cui Zuccheri:</td>
-              <td><b>{product.zuccheri}</b></td>
+              <td><b>{product.diCuiZuccheri}</b></td>
             </tr>
             <tr>
               <td>Proteine:</td>
@@ -73,7 +71,21 @@ const ProductDetail = ({ product }) => {
               <td><b>{product.sale}</b></td>
             </tr>
           </table>
-
+          <p><b>Etichettatura Ambientale</b></p>
+          <table>
+            <tr>
+              <td>Bottiglia:</td>
+              <td><b>{product.bottiglia}</b></td>
+            </tr>
+            <tr>
+              <td>Tappo:</td>
+              <td><b>{product.tappo}</b></td>
+            </tr>
+            <tr>
+              <td>Capsula:</td>
+              <td><b>{product.capsula}</b></td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>
