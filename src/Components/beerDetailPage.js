@@ -49,15 +49,16 @@ const BeerDetailPage = () => {
 				</div>
 				<div className="wine-content">
 					<h2>{birra.nomeBirra}</h2>
-					<span className='campoDescrizione'><CiCalendar className='iconaCampoDescrizione'/> <p>Annata: <b>{birra.annata}</b></p></span>
-					<span className='campoDescrizione'><HiOutlineIdentification className='iconaCampoDescrizione'/> <p>Denominazione: <b>{birra.denominazione}</b></p></span>
-					<span className='campoDescrizione'><GiVineLeaf className='iconaCampoDescrizione'/> <p>Vitigno: <b>{birra.vitigno}</b></p></span>
+					<p>{birra.descrizione}</p>
+					{/* <span className='campoDescrizione'><CiCalendar className='iconaCampoDescrizione'/> <p>Annata: <b>{birra.annata}</b></p></span> */}
+					{/* <span className='campoDescrizione'><HiOutlineIdentification className='iconaCampoDescrizione'/> <p>Descrizione: <b>{birra.descrizione}</b></p></span> */}
+					{/* <span className='campoDescrizione'><GiVineLeaf className='iconaCampoDescrizione'/> <p>Vitigno: <b>{birra.vitigno}</b></p></span> */}
 					<span className='campoDescrizione'><LiaWineBottleSolid className='iconaCampoDescrizione'/> <p>Formato: <b>{birra.formato}</b></p></span>
-					<span className='campoDescrizione'><PiBeerBottle className='iconaCampoDescrizione'/> <p>Alcol: <b>{birra.alcol}</b></p></span>
-					<span className='campoDescrizione'><IoCalendarOutline className='iconaCampoDescrizione'/> <p>Consumo ideale: <b>{birra.consumo}</b></p></span>
+					<span className='campoDescrizione'><PiBeerBottle className='iconaCampoDescrizione'/> <p>Alcol: <b>{birra.gradazione}</b></p></span>
+					{/* <span className='campoDescrizione'><IoCalendarOutline className='iconaCampoDescrizione'/> <p>Consumo ideale: <b>{birra.consumo}</b></p></span> */}
 					<span className='campoDescrizione'><LiaTemperatureHighSolid className='iconaCampoDescrizione'/> <p>Temperatura di servizio: <b>{birra.temperaturaDiServizio}</b></p></span>
-					<span className='campoDescrizione'><LuClipboardType className='iconaCampoDescrizione'/> <p>Tipologia: <b>{birra.tipologia}</b></p></span>
-					<span className='campoDescrizione'><HiOutlinePuzzlePiece className='iconaCampoDescrizione'/> <p>Abbinamenti: <b>{birra.abbinamenti}</b></p></span>
+					<span className='campoDescrizione'><LuClipboardType className='iconaCampoDescrizione'/> <p>Ingredienti: <b>{birra.ingredienti}</b></p></span>
+					{/* <span className='campoDescrizione'><HiOutlinePuzzlePiece className='iconaCampoDescrizione'/> <p>Abbinamenti: <b>{birra.abbinamenti}</b></p></span> */}
 				</div>
 			</div>
 		</>
