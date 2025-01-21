@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "./static/css/main.94e59ad4.css",
+    "main.js": "./static/js/main.f5d69e74.js",
+    "static/media/logoVini.png": "./static/media/logoVini.a39bc489fd90dfbd2dde.png",
+    "static/media/impronta.jpeg": "./static/media/impronta.ab87f510ef377690a2d1.jpeg",
+    "static/media/gavi2.jpeg": "./static/media/gavi2.4dcd64e2b1c69c7fdeb7.jpeg",
+    "static/media/eon_energia_casa.png": "./static/media/eon_energia_casa.bdfa985ca3f20cadee4d.png",
+    "static/media/sede.jpeg": "./static/media/sede.1c4969d1ede3f5a7818f.jpeg",
+    "static/media/gavi.jpeg": "./static/media/gavi.7f2e8cba8e9183dfa51f.jpeg",
+    "static/media/supersolar.png": "./static/media/supersolar.b86be6a0562f5233bdde.png",
+    "static/media/eon-pannello.jpeg": "./static/media/eon-pannello.c937910f8985b98b9714.jpeg",
+    "static/media/lente.jpeg": "./static/media/lente.69a612a018c0c27229d9.jpeg",
+    "static/media/logoEon.png": "./static/media/logoEon.bc841d1d9295328ce15c.png",
+    "static/media/macchina-eon.png": "./static/media/macchina-eon.5b9956f9c15d7f3dab17.png",
+    "static/media/firma.svg": "./static/media/firma.692244dcd06803fd77401a6bac7dd25d.svg",
+    "static/media/logo.svg": "./static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
+    "static/media/slick.svg": "./static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "./index.html",
+    "main.94e59ad4.css.map": "./static/css/main.94e59ad4.css.map",
+    "main.f5d69e74.js.map": "./static/js/main.f5d69e74.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94e59ad4.css",
+    "static/js/main.f5d69e74.js"
+  ]
+}
