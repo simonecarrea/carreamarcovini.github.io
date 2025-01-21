@@ -1,0 +1,117 @@
+.product-detail {
+  width: 50%;
+  border: 1px solid red;
+  border-radius: 15px;
+}
+
+.product-image {
+  width: 50%;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+
+
+.wine-card-detail {
+  flex: 1;
+  padding: 25px 50px 75px;
+}
+
+.wine-card-detail img {
+  width: 75%;
+  border-radius: 10px;
+}
+
+.wine-content-detail {
+  flex: 1;
+  padding: 25px 0px 75px;
+  text-align: left;
+  max-width: 85%;
+}
+
+.wine-content-detail h2 {
+  font-size: 24px;
+  padding-bottom: 40px;
+}
+
+.wine-content-detail p {
+  font-size: 16px;
+  //margin-left: 1em;
+}
+
+.product-detail {
+  padding: 20px;
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .wine-card-detail,
+    .wine-content {
+      //flex: 1 1 45%; // Imposta il layout per schermi più grandi
+
+      img.product-image {
+        width: 100%; // Assicura che l'immagine si adatti
+        height: auto;
+      }
+    }
+  }
+
+  table {
+    width: 100%; // Assicura che la tabella occupi tutta la larghezza
+
+    td {
+      padding: 8px;
+      font-size: 1rem;
+    }
+  }
+
+  // Media query per schermi più piccoli
+  @media (max-width: 768px) {
+    .product-container {
+      flex-direction: column; // Passa a un layout verticale su schermi piccoli
+    }
+
+    h2 {
+      font-size: 1.25rem; // Riduce leggermente la dimensione del titolo
+    }
+
+    .wine-card-detail,
+    .wine-content {
+      flex: 1 1 100%; // Ogni sezione occuperà il 100% della larghezza su mobile
+    }
+
+    table {
+      td {
+        font-size: 0.9rem; // Riduce la dimensione del testo nelle tabelle su dispositivi mobili
+        padding: 15px 0px 15px;
+      }
+    }
+
+    // Puoi anche modificare il padding e le spaziature per ottimizzare l'uso dello spazio
+    .product-detail {
+      padding: 10px;
+      border: 0px solid red!important;
+      border-radius: 0px!important;
+
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .product-detail {
+    padding: 10px;
+    border: 0px solid red!important;
+    border-radius: 0px!important;
+
+  }
+}
