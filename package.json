@@ -2,7 +2,7 @@
   "name": "portale-vini",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.carreamarcovini.com",
+  "homepage": ".",
   "dependencies": {
     "@react-google-maps/api": "^2.19.2",
     "babel-preset-react": "^6.24.1",
