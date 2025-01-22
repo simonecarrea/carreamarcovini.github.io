@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.895a5d46.css",
-    "main.js": "/static/js/main.aa173597.js",
+    "main.js": "/static/js/main.801d7ab3.js",
     "static/media/logoVini.png": "/static/media/logoVini.a39bc489fd90dfbd2dde.png",
     "static/media/impronta.jpeg": "/static/media/impronta.ab87f510ef377690a2d1.jpeg",
     "static/media/gavi2.jpeg": "/static/media/gavi2.4dcd64e2b1c69c7fdeb7.jpeg",
@@ -21,10 +21,10 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.895a5d46.css.map": "/static/css/main.895a5d46.css.map",
-    "main.aa173597.js.map": "/static/js/main.aa173597.js.map"
+    "main.801d7ab3.js.map": "/static/js/main.801d7ab3.js.map"
   },
   "entrypoints": [
     "static/css/main.895a5d46.css",
-    "static/js/main.aa173597.js"
+    "static/js/main.801d7ab3.js"
   ]
 }
