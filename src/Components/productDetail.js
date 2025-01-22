@@ -38,7 +38,6 @@ const ProductDetail = ({ product }) => {
               <td><b>{product.solfiti2}</b></td>
             </tr>
           </table>
-          <br></br>
           <p><b>Dichiarazione Nutrizionale</b></p>
           <p><b>Valori medi per 100ml</b></p>
           <table>

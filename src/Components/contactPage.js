@@ -9,14 +9,14 @@ const ContactPage = () => {
             <div className="contact-info">
                 <div className="contact-section">
                     <h2><FiMapPin /> Dove Siamo</h2>
-                    <p>Via della Cantina 123, 00000, Città del Vino (Provincia)</p>
-                    <GoogleMapComponent />
+                    <p>Via Cadimassa, 25, 15060, Parodi Ligure (Frazione Cadimassa), AL</p>
+                    {/* <GoogleMapComponent /> */}
                 </div>
                 
                 <div className="contact-section">
                     <h2><FiPhone /> Contatti</h2>
-                    <p>Telefono: +39 123 456 789</p>
-                    <p>Email: info@carreamarcovini.it</p>
+                    <p>Telefono: +39 338 7286477</p>
+                    <p>Email: carreamarcovini@live.com</p>
                 </div>
 
                 <div className="contact-section">
