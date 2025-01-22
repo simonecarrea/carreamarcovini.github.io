@@ -1,0 +1,17 @@
+.catalog-page {
+    padding: 20px;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* Impedisce il wrapping su più righe */
+    overflow-x: auto;
+    /* Abilita lo scrolling orizzontale se le card superano la larghezza del contenitore */
+}
+
+.iconaFiltri {
+    width: 3em;
+    height: 3em;
+    margin-left: 3%;
+}

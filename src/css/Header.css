@@ -1,0 +1,92 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: transparent;
+  position: relative;
+  top: 0;
+  height: auto;
+  min-height: 70px;
+  z-index: 1;
+  color: #e5e5e5;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logoEon {
+  width: 90px;
+}
+
+/* Aggiungi questi stili per centrare i link nella versione desktop */
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  /* Distribuisce lo spazio tra i pulsanti */
+  align-items: center;
+  flex-grow: 1;
+  padding: 0;
+  margin: 0;
+}
+
+/* Stile per gli elementi della lista */
+.nav-list li {
+  margin-left: 20px;
+}
+
+.nav-list li:first-child {
+  margin-left: 0;
+}
+
+.a {
+  text-decoration: none;
+  color: #e5e5e5;
+  font-size: 18px;
+  transition: color 0.4s;
+}
+
+.a:hover {
+  color: #007BFF;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+
+  .logo {
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(20, 20, 20, 0.9);
+    width: 100%;
+    height: calc(110vh - 70px);
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+
+  .nav-list.open {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .menu-icon {
+    display: block;
+    color: #e5e5e5;
+    margin-left: auto;
+    z-index: 20;
+  }
+}

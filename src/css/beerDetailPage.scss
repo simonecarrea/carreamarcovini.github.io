@@ -1,0 +1,202 @@
+// CourseDetail.css
+
+.wine-detail {
+    display: flex;
+    align-items: stretch;
+    margin-top: 20px;
+  }
+  
+  .wine-card {
+    flex: 1;
+    padding: 50px 50px 75px;
+  }
+  
+  .wine-card img {
+    width: 75%;
+    border-radius: 10px;    
+    background-color: white;
+    cursor: zoom-in;
+  }
+  
+  .immagineDettaglio.ingrandita {
+    cursor: zoom-out;
+    transform: scale(1.8);
+    position: relative;
+    margin-left: 60%;
+    z-index: 2;
+  }
+  
+  .wine-content {
+    flex: 1;
+    padding: 25px 50px 75px;
+    text-align: left;
+  }
+  
+  .wine-content h2 {
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+  
+  .wine-content p {
+    font-size: 16px;
+    //margin-left: 1em;
+  }
+  
+  .recommended {
+    margin-bottom: 30px;
+  }
+  
+  .video-player {
+    padding: 25px 50px 75px;
+    flex: 1;
+    height: 100%;
+  }
+  
+  .modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    width: 37%;
+    height: 53%;
+    text-align: center;
+    color: black;
+    border-radius: 5%;
+  }
+  
+  .close {
+    color: rgb(0, 0, 0);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 35px;
+    margin-bottom: 10%;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+  
+  .campoDescrizione {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .iconaCampoDescrizione {
+    width: 2em;
+    height: 2em;
+    margin-right: 10px;
+  }
+  
+  .filtri {
+    display: flex;
+    align-items: center; /* Allinea verticalmente */
+    gap: 8px; /* Spazio tra il titolo e l'icona */
+    justify-content: flex-end;
+  }
+  
+  .iconaFiltri {
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+  
+    
+    .wine-detail {
+      flex-direction: column; /* Stack layout per mobile */
+      align-items: center;    /* Centra il contenuto */
+    }
+  
+    .wine-card {
+      width: 100%;
+      max-width: 350px;
+      margin-bottom: 20px;
+      padding: 25px 0px 70px;
+    }
+  
+    .wine-content {
+      width: 100%;
+      padding: 25px 0px 70px;
+      text-align: center; /* Centra il testo per migliorare la leggibilità */
+    }
+  
+    .campoDescrizione {
+      display: flex;
+      flex-direction: row; /* Testo sotto l'icona */
+      margin: 10px 10px;
+    }
+  
+    .iconaCampoDescrizione {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+  
+    h2 {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  
+    p {
+      max-width: 85%;
+    }
+  
+    /* Modale */
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .modal-content {
+      width: 90%;
+      max-width: 400px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+  
+    .modal-content textarea {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .modal-content button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 15px;
+    }
+  }
